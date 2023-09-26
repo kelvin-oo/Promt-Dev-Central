@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-import Form from "@/components/Form";
+import Form from "../../components/Form";
 const CreatePrompt = () => {
   const router = useRouter();
   const { data: session } = useSession();
@@ -35,7 +35,7 @@ const CreatePrompt = () => {
       setIsSubmitting(false);
     }
   };
-
+    console.log(session?.user.id);
   return (
     <Form
       type="Create"

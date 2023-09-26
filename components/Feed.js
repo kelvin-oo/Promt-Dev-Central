@@ -114,6 +114,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
 import { useState, useEffect } from "react";
 export default function Feed() {
   const [searchText, setSearchText] = useState("");
+  
   const [posts, setPosts] = useState([])
 
   const handleSearchChange = (e) => {
